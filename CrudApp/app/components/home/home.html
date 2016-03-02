@@ -1,0 +1,42 @@
+
+<div data-ng-controller="homeCtrl">
+
+        <!--<table>
+         <tr>
+             <td>ID</td>
+             <td>Name</td>
+             <td>Email</td>
+             <td>DOB</td>
+             <td>Company Name</td>
+         </tr>-->
+        <h1>STUDENT INFORMATION</h1>
+        <h2>Listing the elements</h2>
+
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Email</td>
+            </tr>
+
+            <tr ng-repeat="data in datalist">
+        <td>
+            {{data.id}}
+        </td>
+        <td>
+            {{data.name}}
+        </td>
+        <td>
+            {{data.email}}
+        </td>
+
+            </tr>
+    </table>
+
+        <input type="button" class="button" value="Add A Record" data-ng-click="callAdd()">
+
+    </div>
+</div>
+
+
+

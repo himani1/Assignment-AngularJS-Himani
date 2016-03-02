@@ -1,0 +1,47 @@
+<html data-ng-app="CrudApp">
+<head>
+
+  <script src="angular.js"></script>
+  <script src="angular-ui-router.min.js"></script>
+  <script src="shared/CrudApp.module.js"></script>
+  <script src="shared/CrudApp.route.js"></script>
+  <script src="components/home/home.html"></script>
+  <script src="components/home/home.factory.js"></script>
+  <script src="components/home/homeCtrl.js"></script>
+  <script src="components/add/add.html"></script>
+  <script src="components/add/addCtrl.js"></script>
+  <script src="components/add/add.factory.js"></script>
+
+  <title></title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    tr, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #f2f2f2}
+
+    h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 100px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; background-color:#ccffcc}
+
+    h2 { color:#ffffff; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; background-color:#1a1a1a}
+
+    p { color: #685206; font-family: 'Helvetica Neue', sans-serif; font-size: 14px; line-height: 24px; margin: 0 0 24px; text-align: justify; text-justify: inter-word; }
+
+  </style>
+
+</head>
+
+<body>
+
+<div ui-view>
+
+</div>
+</body>
+
+
+</html>
